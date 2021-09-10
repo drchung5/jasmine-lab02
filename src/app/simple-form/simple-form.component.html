@@ -1,0 +1,8 @@
+<form [formGroup]=numForm>
+  <label>Enter a number between 1-10</label>
+  <input type=number formControlName=num>
+  <button 
+    id=submit-button 
+    (click)=onSubmit() 
+    [disabled]="numForm.invalid || numForm.pristine">Submit</button>
+</form>
